@@ -1,7 +1,9 @@
 [package]
-name = "blinky"
+name = "esp32-template"
 version = "0.1.0"
 edition = "2021"
+authors = ["m1ckc3b"]
+description = "Template for ESP32 projects to use with cargo-generate"
 
 [dependencies]
 esp-backtrace = { version = "0.14.2", features = [
