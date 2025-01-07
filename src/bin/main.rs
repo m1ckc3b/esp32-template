@@ -9,11 +9,7 @@ use log::info;
 
 #[entry]
 fn main() -> ! {
-    let peripherals = esp_hal::init({
-        let mut config = esp_hal::Config::default();
-        config.cpu_clock = CpuClock::max();
-        config
-    });
+    let peripherals = esp_hal::init(esp_hal::Config::default());
 
     esp_println::logger::init_logger_from_env();
 
